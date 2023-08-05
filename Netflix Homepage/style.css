@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./Images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 20%;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #e30f0f;
+    color: #fff;
+    padding: 10px 20px 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+}
+
+.header-content h1{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 600;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.header-content p{
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+
+.email{
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.email input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 15px;
+}
+
+.email button{
+    background: #e30f0f;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px 15px;
+}
+
+hr{
+    border: 3px solid #3c3b3b;
+    margin-bottom: 10px;
+}
+
+/*--------------Features--------------*/
+    
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.content{
+    flex-basis: 50%;
+    margin-bottom: 20px;  
+}
+.image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*--------------FAQ--------------*/
+
+.FAQ{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.FAQ h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.QA{
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+
+.QA li{
+    list-style: none;
+    width: 100%;
+    padding: 2px;
+}
+
+.QA li label{
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    background: #363434;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+}
+
+.QA .content{
+    background-color: #373333;
+    text-align: center;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.QA input[type="radio"]:checked +label +.content{
+    max-height: 500px;
+    padding: 30px 20px;
+} 
+
+.QA input[type="radio"]:checked +label::after{
+    transform: rotate(135deg);
+}
+
+.FAQ p{
+    font-size: 20px;
+}
+
+.FAQ email{
+    margin: 20px auto 60px;
+    max-width: 600px;
+}
+
+/*--------------Footer--------------*/
+
+.footer{
+    padding: 50px 10% 10px;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 5px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .lang-btn{
+    color:#fff;
+    background: #000;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.footer p{
+    color:#777;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
